@@ -1,0 +1,151 @@
+* {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+      }
+      
+      /* Main defaults */
+      body {
+          font-family: monospace;
+          background-color: #fdfdfd;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+      }
+      
+      /* Top and bottom */
+      header,
+      footer {
+          display: flex;
+          justify-content: center;
+          padding: 12px, 0px;
+      }
+      
+      /* Container body */
+      .container {
+          background-color: #ffffff;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      
+      /* Titles and texts */
+      h1,
+      h2 {
+          color: #F2F2F2;
+          padding: 24px 0px;
+          font-weight: normal;
+      }
+      
+      h1 { font-size: 48px; } 
+      h2 { font-size: 18px; }
+      a { color: cyan; }
+      
+      /* Device body */
+      .main-frame {
+          height: 550px;
+          width: 400px;
+          border: 2px solid rgb(0, 0, 0);
+          border-radius: 12px;
+          background-color: rgb(104, 104, 104);
+          display: flex;
+          justify-content: center;
+      }
+      
+      .calc-body {
+          padding: 14px 14px 12px 14px;
+      }
+      
+      /* Result display */
+      .calc-screen {
+          font-family: 'Calculator';
+          font-weight: 500;
+          font-size: 76px;
+          border: 2px solid black;
+          border-radius: 6px;
+          background-color: lightgray;
+          min-width: 360px;
+          height: 25%;
+          text-align: end;
+      }
+      
+      /* Buttons main defaults */
+      button {
+          border: 2px solid black;
+          border-radius: 6px;
+          font-size: 24px;
+          cursor: pointer;
+      }
+      
+      /* Some visual effects */
+      button:hover {
+          background-color: lightgray;
+      }
+      
+      button:active {
+          background-color: darkgray;
+      }
+      
+      /* Frame of buttons */
+      .buttons-frame {
+          height: 75%;
+          display: flex;
+          flex-direction: column;
+      }
+      
+      /* Clearn and delete */
+      .clear-delete {
+          display: flex;
+          justify-content: space-evenly;
+          padding-top: 12px;
+          gap: 8px;
+      
+          >button {
+              width: 180px;
+              height: 64px;
+          }
+      
+          /* On active effects */
+      
+          >.clear-btn {
+              background-color: lightpink;
+          }
+      
+          >.clear-btn:hover {
+              background-color: #F77B7B;
+          }
+      
+          > .clear-btn:active {
+              background-color: #B43F46;
+          }
+      
+          >.delete-btn {
+              background-color: rgb(163, 141, 240);
+          }
+      
+          >.delete-btn:hover {
+              background-color: #08CEFF;
+          }
+      
+          > .delete-btn:active {
+              background-color: #0087b5;
+          }
+      }
+      
+      /* Number buttons */
+      .num-buttons {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          padding-top: 12px;
+          gap: 8px;
+          flex: 1;
+      
+          >button {
+              width: 86px;
+              height: 68px;
+          }
+      }
+      
